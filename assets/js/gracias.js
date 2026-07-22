@@ -18,6 +18,14 @@
     var datos;
     try{ datos = JSON.parse(crudo); }catch(err){ return; }
 
+    // Saludo personalizado ("Hola <nombre>") debajo de "¡Solicitud enviada!"
+    var saludo = document.getElementById('saludoNombre');
+    if(saludo && datos.nombre){
+      var primerNombre = datos.nombre.trim().split(/\s+/)[0];
+      saludo.textContent = '¡Hola, ' + primerNombre + '!';
+      saludo.hidden = false;
+    }
+
     function agregarDato(etiqueta, valor, destacado){
       if(!valor) return;
       var div = document.createElement('div');

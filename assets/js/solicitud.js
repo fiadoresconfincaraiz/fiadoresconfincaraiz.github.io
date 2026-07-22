@@ -87,13 +87,15 @@
 
   function formatoCOP(valor){ return '$' + Math.round(valor).toLocaleString('es-CO'); }
 
-  function calcularEstimado(valorTexto, entidadTexto){
+  function calcularEstimado(valorTexto, entidadTexto, tipoServicioTexto){
     var soloNumeros = (valorTexto || '').replace(/[^\d]/g, '');
     var valor = parseInt(soloNumeros, 10);
     if(!valor || valor <= 0) return null;
     var tier = MAPA_ENTIDAD[entidadTexto] || 'propietario';
     var bracket = bracketDeCanon(valor);
     var precio = bracket === 'mas5' ? valor * PORCENTAJE_MAS_DE_5[tier] : PRECIOS_FIJOS[bracket][tier];
+    // Tomador y fiador = 2 personas, por eso se duplica el valor del servicio (misma regla que en cotizacion.js)
+    if(tipoServicioTexto === 'Tomador y fiador') precio = precio * 2;
     return formatoCOP(precio);
   }
 
@@ -120,7 +122,7 @@
     var entidadVal = v('Entidad donde solicita el servicio');
     var observaciones = v('Observaciones');
 
-    var estimado = calcularEstimado(valorServicio, entidadVal);
+    var estimado = calcularEstimado(valorServicio, entidadVal, tipoServicioVal);
 
     var lineas = [];
     lineas.push('Hola ' + (nombre || '') + ', gracias por solicitar tu servicio con fiador.com.');
@@ -137,6 +139,10 @@
     lineas.push('VALOR ESTIMADO DEL SERVICIO: ' + (estimado || 'Por confirmar con un asesor'));
     lineas.push('===================================');
     lineas.push('');
+    if(tipoServicioVal === 'Tomador y fiador'){
+      lineas.push('Este valor incluye el costo de dos personas: una como titular o tomador del contrato, y otra como fiador con finca raíz.');
+      lineas.push('');
+    }
     lineas.push('Este es un valor de referencia calculado con la información que indicaste. El valor final puede variar según la revisión de nuestro equipo, y ya incluye la norma de finca raíz y solvencia económica exigida.');
     lineas.push('');
     lineas.push('---- Tus datos registrados ----');
@@ -200,7 +206,7 @@
         valorServicio: v2('Valor de arriendo o crédito'),
         direccion: v2('Dirección del inmueble'),
         entidad: entidadTexto === 'Directamente con el propietario' ? entidadTexto : (v2('Nombre de la entidad') ? entidadTexto + ' — ' + v2('Nombre de la entidad') : entidadTexto),
-        estimado: calcularEstimado(v2('Valor de arriendo o crédito'), entidadTexto)
+        estimado: calcularEstimado(v2('Valor de arriendo o crédito'), entidadTexto, v2('Tipo de servicio'))
       };
       sessionStorage.setItem('fiadorResumenSolicitud', JSON.stringify(resumen));
     }catch(err){ /* si el navegador bloquea sessionStorage, simplemente no se muestra el resumen en gracias.html */ }
