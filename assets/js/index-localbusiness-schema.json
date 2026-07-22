@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Fiador.com",
+  "url": "https://fiador.com/",
+  "telephone": "+573117285089",
+  "description": "Servicio de fiador y codeudor con finca raíz para arriendo, créditos y matrícula educativa en Colombia.",
+  "areaServed": ["Bogotá", "Medellín", "Cali", "Neiva", "Ibagué", "Melgar", "Cúcuta", "Bucaramanga", "Cartagena", "Barranquilla", "Pereira", "Manizales"],
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "CO"
+  }
+}

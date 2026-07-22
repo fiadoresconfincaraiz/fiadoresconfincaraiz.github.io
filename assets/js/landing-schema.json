@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Servicio de fiador con finca raíz",
+  "provider": {"@type": "LocalBusiness", "name": "Fiador.com", "telephone": "+573117285089"},
+  "areaServed": ["Bogotá", "Medellín", "Cali", "Barranquilla", "Bucaramanga", "Pereira", "Cartagena", "Manizales"],
+  "description": "Fiadores y codeudores con finca raíz para contratos de arrendamiento en Colombia, con estudio previo, garantía de cambio y documentación en 40 minutos."
+}

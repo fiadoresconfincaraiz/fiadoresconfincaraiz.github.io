@@ -1,0 +1,18 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "¿Qué es un fiador con finca raíz?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Es una persona que respalda tu contrato de arriendo o crédito con una propiedad libre de gravámenes (sin hipoteca ni patrimonio familiar). Es la garantía más solicitada por propietarios, inmobiliarias y aseguradoras en Colombia."}},
+    {"@type": "Question", "name": "¿Cuánto cuesta el servicio de fiador?",
+     "acceptedAnswer": {"@type": "Answer", "text": "El costo depende de la ciudad, el valor del canon y si el trámite es directo con el propietario, con inmobiliaria o con aseguradora. Es un pago único, sin costos ocultos. Escríbenos por WhatsApp y te damos el valor exacto en minutos."}},
+    {"@type": "Question", "name": "¿Qué documentos necesito para solicitar el servicio?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Cédula, certificación laboral, desprendibles de nómina y extractos bancarios recientes. Nosotros nos encargamos de la documentación del fiador, incluyendo el certificado de libertad y tradición del inmueble."}},
+    {"@type": "Question", "name": "¿Cuánto tiempo tarda el proceso?",
+     "acceptedAnswer": {"@type": "Answer", "text": "La documentación queda lista entre 40 minutos y 1 hora. Se envía al propietario el mismo día, la aprobación suele llegar al día siguiente y la autenticación del contrato se agenda para el día posterior."}},
+    {"@type": "Question", "name": "¿Qué pasa si el propietario rechaza al fiador?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Lo cambiamos el mismo día, sin costo adicional, hasta lograr la aprobación de tu contrato."}},
+    {"@type": "Question", "name": "¿Es legal y seguro contratar este servicio?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Sí. Somos una empresa legalmente constituida. Te recomendamos siempre verificar el NIT y la Cámara de Comercio de cualquier empresa de fiadores antes de pagar, y nunca consignar a cuentas o personas naturales."}}
+  ]
+}
