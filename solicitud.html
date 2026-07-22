@@ -6,7 +6,7 @@
 <title>Formulario de Solicitud de Servicio | Fiador.com</title>
 <meta name="description" content="Solicita tu fiador con finca raíz en Colombia. Llena el formulario y un asesor de Fiador.com se comunica contigo para iniciar tu trámite.">
 <meta name="robots" content="noindex, follow">
-<link rel="canonical" href="https://fiadoresconfincaraiz.github.io/inicio/solicitud.html">
+<link rel="canonical" href="https://fiadoresconfincaraiz.github.io/solicitud.html">
 <meta name="theme-color" content="#0B3D66">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" href="assets/img/icons/favicon-32.png" type="image/png" sizes="32x32">
@@ -57,12 +57,12 @@
 <div class="form-shell">
   <div class="form-tarjeta" id="tarjetaForm">
 
-    <form id="formSolicitud" action="https://formsubmit.co/affce5406cc769e5d54a8bfbf39fb59c" method="POST">
+    <form id="formSolicitud" action="https://formsubmit.co/fiador.com@gmail.com" method="POST">
       <!-- Configuración de FormSubmit: envía el resultado como tabla legible al correo, sin captcha visible y redirige al finalizar -->
       <input type="hidden" name="_subject" value="Nueva solicitud de servicio — fiador.com">
       <input type="hidden" name="_template" value="table">
       <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
-      <input type="hidden" name="_next" value="https://fiadoresconfincaraiz.github.io/inicio/gracias.html">
+      <input type="hidden" name="_next" value="https://fiadoresconfincaraiz.github.io/gracias.html">
       <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
       <!-- Campo espejo requerido por FormSubmit para poder autoresponder al correo del solicitante (se sincroniza por JS con "Correo electrónico") -->
       <input type="hidden" name="email" id="emailEspejo">
@@ -175,11 +175,11 @@
 
       <div class="legales">
         <div class="check-linea">
-          <input type="checkbox" id="checkTerminos" name="Acepta términos y condiciones" value="Sí" required>
+          <input type="checkbox" id="checkTerminos" name="Acepta términos y condiciones" value="Sí" required checked>
           <label for="checkTerminos">He leído y acepto los <button type="button" class="link-legal" id="abrirTerminos">Términos y Condiciones</button> del servicio.</label>
         </div>
         <div class="check-linea">
-          <input type="checkbox" id="checkDatos" name="Acepta ley de tratamiento de datos" value="Sí" required>
+          <input type="checkbox" id="checkDatos" name="Acepta ley de tratamiento de datos" value="Sí" required checked>
           <label for="checkDatos">He leído y acepto la <button type="button" class="link-legal" id="abrirDatos">Ley de Tratamiento de Datos</button>.</label>
         </div>
       </div>

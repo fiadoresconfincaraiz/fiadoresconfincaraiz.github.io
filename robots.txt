@@ -3,4 +3,4 @@ Allow: /
 Disallow: /cotizacion.html
 Disallow: /solicitud.html
 
-Sitemap: https://fiadoresconfincaraiz.github.io/inicio/sitemap.xml
+Sitemap: https://fiadoresconfincaraiz.github.io/sitemap.xml
