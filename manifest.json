@@ -1,0 +1,16 @@
+{
+  "name": "Fiador.com — Fiador con finca raíz",
+  "short_name": "Fiador.com",
+  "description": "Servicio de fiador y codeudor con finca raíz para arriendo en Colombia.",
+  "start_url": "/inicio/index.html",
+  "scope": "/inicio/",
+  "display": "standalone",
+  "background_color": "#F7FAFD",
+  "theme_color": "#0A3357",
+  "lang": "es",
+  "icons": [
+    { "src": "/inicio/assets/img/icons/favicon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/inicio/assets/img/icons/favicon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/inicio/assets/img/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

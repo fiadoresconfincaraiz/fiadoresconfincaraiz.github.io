@@ -1,0 +1,11 @@
+# Redirecciones para URLs limpias (coinciden con los canonical del <head> de cada página)
+# ESTE ARCHIVO SOLO FUNCIONA EN NETLIFY. GitHub Pages lo ignora por completo (no tiene
+# soporte de redirecciones/rewrites del lado del servidor) -- se deja aquí listo para
+# cuando el sitio se mude al dominio definitivo fiador.com sobre Netlify.
+
+/landing        /landing.html        200
+/cotizacion     /cotizacion.html     200
+/solicitud      /solicitud.html      200
+/gracias        /gracias.html        200
+/juridica       /juridica.html       200
+/index.html     /                    301

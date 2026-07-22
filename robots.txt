@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /cotizacion.html
+Disallow: /solicitud.html
+
+Sitemap: https://fiadoresconfincaraiz.github.io/inicio/sitemap.xml

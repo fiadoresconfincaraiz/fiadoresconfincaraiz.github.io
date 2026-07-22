@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>¡Gracias por preferirnos! | Fiador.com</title>
+<meta name="description" content="Tu solicitud de servicio fue enviada correctamente. Un asesor de Fiador.com se pondrá en contacto contigo muy pronto.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://fiadoresconfincaraiz.github.io/inicio/gracias.html">
+<meta name="theme-color" content="#0B3D66">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="assets/img/icons/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="assets/img/icons/favicon-16.png" type="image/png" sizes="16x16">
+<link rel="apple-touch-icon" href="assets/img/icons/apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; frame-src 'none';">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/solicitud.css">
+<link rel="stylesheet" href="assets/css/gracias.css">
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header>
+  <div class="nav">
+    <a href="index.html" class="logo">fiador<span>.com</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Inicio</a>
+      <a href="solicitud.html">Solicitud de servicio</a>
+      <a href="cotizacion.html">Cotización</a>
+      <a href="juridica.html">Seguridad</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primario" target="_blank" rel="noopener" href="https://wa.me/573117285089?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20servicio%20de%20fiador">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.5 3.62 1.4 5.13L2 22l5.1-1.5a9.9 9.9 0 0 0 4.94 1.32h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2Zm5.83 14.14c-.25.7-1.42 1.33-1.98 1.4-.5.08-1.14.11-1.84-.12a17.2 17.2 0 0 1-2.1-.78 12.4 12.4 0 0 1-4.9-4.34c-.36-.5-1.2-1.63-1.2-3.11 0-1.48.77-2.2 1.05-2.5.27-.3.6-.36.8-.36h.57c.18 0 .43-.07.66.5.25.6.86 2.08.94 2.23.08.16.13.34.02.54-.1.2-.16.32-.3.5-.16.18-.32.4-.46.54-.16.16-.32.33-.14.64.18.31.8 1.32 1.71 2.14 1.18 1.05 2.16 1.38 2.48 1.53.32.16.5.13.7-.08.2-.2.83-.96 1.05-1.3.22-.32.44-.27.73-.16.3.1 1.89.9 2.21 1.06.32.16.53.24.6.38.09.14.09.79-.16 1.5Z"/></svg>
+        <span class="txt">WhatsApp</span>
+      </a>
+      <button class="hamb" id="hambBtn" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div id="centinelaHeader" style="height:1px;"></div>
+
+<!-- ===================== CONFIRMACIÓN ===================== -->
+<section class="cabecera-form">
+  <div class="wrap">
+    <div class="eyebrow">Solicitud recibida</div>
+    <h1>¡Gracias por preferirnos!</h1>
+    <p>El área de gestión documental revisará tu información para asignarte el perfil más adecuado.</p>
+  </div>
+</section>
+
+<div class="form-shell">
+  <div class="form-tarjeta">
+    <div class="confirmacion activa">
+      <div class="icono">✓</div>
+      <h2 style="color:var(--azul-oscuro);margin-bottom:10px;">¡Solicitud enviada!</h2>
+      <p style="color:var(--gris);">Un asesor revisará tu información y se pondrá en contacto contigo muy pronto. Además, te enviamos a tu correo un ejemplo del valor estimado de tu servicio.</p>
+    </div>
+
+    <!-- ---------- Resumen (se llena con JS desde los datos que acabas de enviar) ---------- -->
+    <div class="resumen-solicitud" id="resumenSolicitud" hidden>
+      <h3 class="gracias-subtitulo">Resumen de tu solicitud</h3>
+      <div class="resumen-grid" id="resumenGrid"></div>
+    </div>
+
+    <!-- ---------- Datos bancarios ---------- -->
+    <div class="datos-bancarios">
+      <h3 class="gracias-subtitulo">Datos bancarios</h3>
+      <p class="datos-bancarios-intro">Realiza el depósito inicial por medio del código QR o la llave.</p>
+
+      <div class="banco-flex">
+        <div class="qr-protegido" id="qrProtegido" role="img" aria-label="Código QR Bre-B para el depósito inicial" oncontextmenu="return false" draggable="false"></div>
+        <div class="banco-info">
+          <span class="llave-label">Llave</span>
+          <span class="llave-valor" id="llaveValor">@DLINP384</span>
+          <button type="button" class="btn-copiar-llave" id="btnCopiarLlave">Copiar llave</button>
+        </div>
+      </div>
+
+      <p class="datos-bancarios-texto">Puedes realizar el pago con cualquier entidad financiera por medio del código QR o transfiriendo por medio de la llave. Eso incluye Nequi, Daviplata, Bancolombia, BBVA o cualquier banco de Colombia.</p>
+    </div>
+
+    <!-- ---------- Documentación ---------- -->
+    <div class="documentacion-caja">
+      <p><strong>De 40 minutos a 1 hora como tiempo máximo</strong> recibirás la siguiente documentación:</p>
+      <ol class="lista-documentos">
+        <li>Cédula de Ciudadanía</li>
+        <li>Certificado Laboral</li>
+        <li>Desprendible de Nómina</li>
+        <li>Extractos Bancarios</li>
+        <li>Certificado de Libertad y Tradición</li>
+        <li>Perfil del Codeudor</li>
+      </ol>
+    </div>
+
+    <!-- ---------- Aviso importante ---------- -->
+    <div class="aviso-importante">
+      <strong>Importante:</strong> dentro de ese mismo tiempo, envía el comprobante del depósito por WhatsApp al asesor que te está atendiendo. Queda muy atento a su confirmación.
+    </div>
+
+    <p class="volver-inicio"><a href="index.html">← Volver al inicio</a></p>
+  </div>
+</div>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">fiador<span>.com</span></div>
+        <p>Diez años ofreciendo servicio de fiador y codeudor con finca raíz para arriendo en toda Colombia.</p>
+      </div>
+      <div>
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="index.html#servicios">Fiador para arriendo</a></li>
+          <li><a href="solicitud.html">Solicitar servicio</a></li>
+          <li><a href="cotizacion.html">Cotizar servicio</a></li>
+          <li><a href="juridica.html">Seguridad jurídica</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Sitio</h4>
+        <ul>
+          <li><a href="index.html#como-funciona">Cómo funciona</a></li>
+          <li><a href="index.html#ciudades">Ciudades</a></li>
+          <li><a href="index.html#testimonios">Testimonios</a></li>
+          <li><a href="index.html#fiadores">Nuestros fiadores</a></li>
+          <li><a href="index.html#preguntas">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a target="_blank" rel="noopener" href="https://wa.me/573117285089">WhatsApp +57 311 728 5089</a></li>
+          <li><a href="mailto:fiador.com@gmail.com">fiador.com@gmail.com</a></li>
+          <li>Lunes a viernes, 8:00 a.m. – 6:00 p.m.</li>
+          <li>Cobertura en 12 ciudades de Colombia</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="anio"></span> fiador.com — Todos los derechos reservados.</span>
+      <span>Verifica siempre el NIT y la Cámara de Comercio antes de pagar cualquier servicio.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-flotante" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"
+   href="https://wa.me/573117285089?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20servicio%20de%20fiador">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.5 3.62 1.4 5.13L2 22l5.1-1.5a9.9 9.9 0 0 0 4.94 1.32h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2Zm5.83 14.14c-.25.7-1.42 1.33-1.98 1.4-.5.08-1.14.11-1.84-.12a17.2 17.2 0 0 1-2.1-.78 12.4 12.4 0 0 1-4.9-4.34c-.36-.5-1.2-1.63-1.2-3.11 0-1.48.77-2.2 1.05-2.5.27-.3.6-.36.8-.36h.57c.18 0 .43-.07.66.5.25.6.86 2.08.94 2.23.08.16.13.34.02.54-.1.2-.16.32-.3.5-.16.18-.32.4-.46.54-.16.16-.32.33-.14.64.18.31.8 1.32 1.71 2.14 1.18 1.05 2.16 1.38 2.48 1.53.32.16.5.13.7-.08.2-.2.83-.96 1.05-1.3.22-.32.44-.27.73-.16.3.1 1.89.9 2.21 1.06.32.16.53.24.6.38.09.14.09.79-.16 1.5Z"/></svg>
+</a>
+
+<script src="assets/js/base.js" defer></script>
+<script src="assets/js/gracias.js" defer></script>
+</body>
+</html>
+
