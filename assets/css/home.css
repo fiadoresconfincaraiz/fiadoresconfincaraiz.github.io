@@ -223,10 +223,10 @@
 /* ---------- Caja 3D (coverflow) para "Fiadores con los que contamos" ---------- */
 #fiadores .tc-viewport{overflow:visible;perspective:1400px;}
 
-#fiadores .tc-pista{display:block;position:relative;height:400px;transition:none;transform-style:preserve-3d;}
+#fiadores .tc-pista{display:block;position:relative;height:260px;transition:none;transform-style:preserve-3d;}
 
 #fiadores .card-fiador{
-    position:absolute;top:0;left:50%;width:220px;height:390px;margin-left:-110px;
+    position:absolute;top:0;left:50%;width:132px;height:234px;margin-left:-66px;
     transition:transform .75s cubic-bezier(.22,1,.36,1), opacity .75s ease, box-shadow .3s ease;
     cursor:pointer;backface-visibility:hidden;background:transparent;box-shadow:none;border:none;overflow:visible;
   }
@@ -242,8 +242,8 @@
   }
 
 @media (max-width:700px){
-  #fiadores .tc-pista{height:340px;}
-  #fiadores .card-fiador{width:170px;height:300px;margin-left:-85px;}
+  #fiadores .tc-pista{height:220px;}
+  #fiadores .card-fiador{width:102px;height:180px;margin-left:-51px;}
 }
 
 @media (prefers-reduced-motion: reduce){
