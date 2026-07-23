@@ -77,12 +77,12 @@
     if(!boton) return;
     if(thumb){
       thumb.addEventListener('error', function(){
-        thumb.src = 'https://img.youtube.com/vi/HVbiCyZa16s/hqdefault.jpg';
+        thumb.src = 'https://img.youtube.com/vi/yktUJbrDDYU/hqdefault.jpg';
       }, {once:true});
     }
     boton.addEventListener('click', function(){
       var iframe = document.createElement('iframe');
-      iframe.src = 'https://www.youtube-nocookie.com/embed/HVbiCyZa16s?autoplay=1&rel=0&playsinline=1';
+      iframe.src = 'https://www.youtube-nocookie.com/embed/yktUJbrDDYU?autoplay=1&rel=0&playsinline=1';
       iframe.title = 'Cómo funciona el servicio de fiador';
       iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
       iframe.allowFullscreen = true;
