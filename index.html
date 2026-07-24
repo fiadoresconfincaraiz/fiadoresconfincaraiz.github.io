@@ -31,8 +31,42 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 
-<script type="application/ld+json" src="assets/data/index-localbusiness-schema.json"></script>
-<script type="application/ld+json" src="assets/data/index-faq-schema.json"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["FinancialService", "LocalBusiness"],
+  "name": "Fiador.com",
+  "url": "https://fiadoresconfincaraiz.github.io/",
+  "telephone": "+573117285089",
+  "description": "Servicio de fiador y codeudor con finca raíz para arriendo, créditos y matrícula educativa en Colombia.",
+  "areaServed": ["Bogotá", "Medellín", "Cali", "Neiva", "Ibagué", "Melgar", "Cúcuta", "Bucaramanga", "Cartagena", "Barranquilla", "Pereira", "Manizales"],
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "CO"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "¿Qué es un fiador con finca raíz?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Es una persona que respalda tu contrato de arriendo o crédito con una propiedad libre de gravámenes (sin hipoteca ni patrimonio familiar). Es la garantía más solicitada por propietarios, inmobiliarias y aseguradoras en Colombia."}},
+    {"@type": "Question", "name": "¿Cuánto cuesta el servicio de fiador?",
+     "acceptedAnswer": {"@type": "Answer", "text": "El costo depende de la ciudad, el valor del canon y si el trámite es directo con el propietario, con inmobiliaria o con aseguradora. Es un pago único, sin costos ocultos. Escríbenos por WhatsApp y te damos el valor exacto en minutos."}},
+    {"@type": "Question", "name": "¿Qué documentos necesito para solicitar el servicio?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Cédula, certificación laboral, desprendibles de nómina y extractos bancarios recientes. Nosotros nos encargamos de la documentación del fiador, incluyendo el certificado de libertad y tradición del inmueble."}},
+    {"@type": "Question", "name": "¿Cuánto tiempo tarda el proceso?",
+     "acceptedAnswer": {"@type": "Answer", "text": "La documentación queda lista entre 40 minutos y 1 hora. Se envía al propietario el mismo día, la aprobación suele llegar al día siguiente y la autenticación del contrato se agenda para el día posterior."}},
+    {"@type": "Question", "name": "¿Qué pasa si el propietario rechaza al fiador?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Lo cambiamos el mismo día, sin costo adicional, hasta lograr la aprobación de tu contrato."}},
+    {"@type": "Question", "name": "¿Es legal y seguro contratar este servicio?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Sí. Somos una empresa legalmente constituida. Te recomendamos siempre verificar el NIT y la Cámara de Comercio de cualquier empresa de fiadores antes de pagar, y nunca consignar a cuentas o personas naturales."}}
+  ]
+}
+</script>
 
 <link rel="stylesheet" href="assets/css/base.css">
 <link rel="stylesheet" href="assets/css/home.css">
@@ -81,7 +115,7 @@
 <!-- ===================== HERO ===================== -->
 <section class="hero" id="inicio">
   <div class="hero-video-fondo" id="heroVideoFondo">
-    <video id="heroBgVideo" class="hero-bg-video" poster="assets/img/hero-fondo-poster.jpg"
+    <video id="heroBgVideo" class="hero-bg-video" poster="assets/img/hero-fondo-poster.webp"
            autoplay muted loop playsinline preload="none" aria-hidden="true">
       <source src="assets/video/hero-fondo.webm" type="video/webm">
       <source src="assets/video/hero-fondo.mp4" type="video/mp4">
@@ -256,6 +290,13 @@
       <span class="ciudad-pill">📍 Pereira</span>
       <span class="ciudad-pill">📍 Manizales</span>
     </div>
+    <div class="enlaces-zonas reveal" style="margin-top:28px;display:flex;flex-wrap:wrap;gap:10px;justify-content:center;">
+      <a href="bogota.html" class="btn btn-zona">Fiador en Bogotá y Sabana</a>
+      <a href="medellin.html" class="btn btn-zona">Fiador en Medellín y Valle de Aburrá</a>
+      <a href="nororiente.html" class="btn btn-zona">Fiador en Bucaramanga y Cúcuta</a>
+      <a href="eje-cafetero.html" class="btn btn-zona">Fiador en el Eje Cafetero</a>
+      <a href="sur.html" class="btn btn-zona">Fiador en Cali, Neiva y Valledupar</a>
+    </div>
   </div>
 </section>
 
@@ -272,52 +313,52 @@
       <div class="card-testi">
         <div class="estrellas">★★★★★</div>
         <p class="cita">"Necesitaba un fiador con finca raíz para un apartamento en Bogotá y en dos días ya tenía todo aprobado. Muy serios con los documentos."</p>
-        <div class="testi-autor"><div class="avatar-foto"><img src="https://thispersondoesnotexist.com/?t=1" alt="Foto de cliente de fiador.com" loading="lazy" class="foto-testimonio" data-inicial="D"></div><div><div class="nombre">Diana R.</div><div class="ciudad">Bogotá</div></div></div>
+        <div class="testi-autor"><div class="avatar-foto"><img src="https://thispersondoesnotexist.com/?t=1" alt="Foto de cliente de fiador.com" width="42" height="42" loading="lazy" class="foto-testimonio" data-inicial="D"></div><div><div class="nombre">Diana R.</div><div class="ciudad">Bogotá</div></div></div>
       </div>
       <div class="card-testi">
         <div class="estrellas">★★★★★</div>
         <p class="cita">"Llevaba semanas pidiendo el favor a familiares sin éxito. Con fiador.com resolví en un solo día y sin incomodar a nadie."</p>
-        <div class="testi-autor"><div class="avatar-foto"><img src="https://thispersondoesnotexist.com/?t=2" alt="Foto de cliente de fiador.com" loading="lazy" class="foto-testimonio" data-inicial="C"></div><div><div class="nombre">Carlos M.</div><div class="ciudad">Medellín</div></div></div>
+        <div class="testi-autor"><div class="avatar-foto"><img src="https://thispersondoesnotexist.com/?t=2" alt="Foto de cliente de fiador.com" width="42" height="42" loading="lazy" class="foto-testimonio" data-inicial="C"></div><div><div class="nombre">Carlos M.</div><div class="ciudad">Medellín</div></div></div>
       </div>
       <div class="card-testi">
         <div class="estrellas">★★★★★</div>
         <p class="cita">"La inmobiliaria exigía codeudor solidario y ellos me lo consiguieron rápido. Todo muy claro, sin sorpresas en el precio."</p>
-        <div class="testi-autor"><div class="avatar-foto"><img src="https://thispersondoesnotexist.com/?t=3" alt="Foto de cliente de fiador.com" loading="lazy" class="foto-testimonio" data-inicial="Y"></div><div><div class="nombre">Yuliana P.</div><div class="ciudad">Cali</div></div></div>
+        <div class="testi-autor"><div class="avatar-foto"><img src="https://thispersondoesnotexist.com/?t=3" alt="Foto de cliente de fiador.com" width="42" height="42" loading="lazy" class="foto-testimonio" data-inicial="Y"></div><div><div class="nombre">Yuliana P.</div><div class="ciudad">Cali</div></div></div>
       </div>
       <div class="card-testi">
         <div class="estrellas">★★★★★</div>
         <p class="cita">"Usé el servicio para mi crédito del ICETEX. Me explicaron todo por WhatsApp y el codeudor cumplió con lo que pedía la universidad."</p>
-        <div class="testi-autor"><div class="avatar-foto"><img src="https://thispersondoesnotexist.com/?t=4" alt="Foto de cliente de fiador.com" loading="lazy" class="foto-testimonio" data-inicial="A"></div><div><div class="nombre">Andrés T.</div><div class="ciudad">Neiva</div></div></div>
+        <div class="testi-autor"><div class="avatar-foto"><img src="https://thispersondoesnotexist.com/?t=4" alt="Foto de cliente de fiador.com" width="42" height="42" loading="lazy" class="foto-testimonio" data-inicial="A"></div><div><div class="nombre">Andrés T.</div><div class="ciudad">Neiva</div></div></div>
       </div>
       <div class="card-testi">
         <div class="estrellas">★★★★★</div>
         <p class="cita">"Al principio dudé porque era un trámite por internet, pero verifiqué que la empresa fuera legal y todo salió como me lo explicaron."</p>
-        <div class="testi-autor"><div class="avatar-foto"><img src="https://thispersondoesnotexist.com/?t=5" alt="Foto de cliente de fiador.com" loading="lazy" class="foto-testimonio" data-inicial="M"></div><div><div class="nombre">Marcela G.</div><div class="ciudad">Ibagué</div></div></div>
+        <div class="testi-autor"><div class="avatar-foto"><img src="https://thispersondoesnotexist.com/?t=5" alt="Foto de cliente de fiador.com" width="42" height="42" loading="lazy" class="foto-testimonio" data-inicial="M"></div><div><div class="nombre">Marcela G.</div><div class="ciudad">Ibagué</div></div></div>
       </div>
       <div class="card-testi">
         <div class="estrellas">★★★★★</div>
         <p class="cita">"Necesitaba fiador para una casa de descanso en Melgar y aunque no es una ciudad grande, me atendieron igual de rápido."</p>
-        <div class="testi-autor"><div class="avatar-foto"><img src="https://thispersondoesnotexist.com/?t=6" alt="Foto de cliente de fiador.com" loading="lazy" class="foto-testimonio" data-inicial="J"></div><div><div class="nombre">Jorge L.</div><div class="ciudad">Melgar</div></div></div>
+        <div class="testi-autor"><div class="avatar-foto"><img src="https://thispersondoesnotexist.com/?t=6" alt="Foto de cliente de fiador.com" width="42" height="42" loading="lazy" class="foto-testimonio" data-inicial="J"></div><div><div class="nombre">Jorge L.</div><div class="ciudad">Melgar</div></div></div>
       </div>
       <div class="card-testi">
         <div class="estrellas">★★★★★</div>
         <p class="cita">"El propietario rechazó el primer fiador y me lo cambiaron el mismo día sin cobrarme nada extra. Eso me dio mucha confianza."</p>
-        <div class="testi-autor"><div class="avatar-foto"><img src="https://thispersondoesnotexist.com/?t=7" alt="Foto de cliente de fiador.com" loading="lazy" class="foto-testimonio" data-inicial="P"></div><div><div class="nombre">Paola S.</div><div class="ciudad">Cúcuta</div></div></div>
+        <div class="testi-autor"><div class="avatar-foto"><img src="https://thispersondoesnotexist.com/?t=7" alt="Foto de cliente de fiador.com" width="42" height="42" loading="lazy" class="foto-testimonio" data-inicial="P"></div><div><div class="nombre">Paola S.</div><div class="ciudad">Cúcuta</div></div></div>
       </div>
       <div class="card-testi">
         <div class="estrellas">★★★★★</div>
         <p class="cita">"Arrendé un local comercial y el proceso con la aseguradora fue mucho más rápido de lo que esperaba gracias a su acompañamiento."</p>
-        <div class="testi-autor"><div class="avatar-foto"><img src="https://thispersondoesnotexist.com/?t=8" alt="Foto de cliente de fiador.com" loading="lazy" class="foto-testimonio" data-inicial="F"></div><div><div class="nombre">Fernando A.</div><div class="ciudad">Cartagena</div></div></div>
+        <div class="testi-autor"><div class="avatar-foto"><img src="https://thispersondoesnotexist.com/?t=8" alt="Foto de cliente de fiador.com" width="42" height="42" loading="lazy" class="foto-testimonio" data-inicial="F"></div><div><div class="nombre">Fernando A.</div><div class="ciudad">Cartagena</div></div></div>
       </div>
       <div class="card-testi">
         <div class="estrellas">★★★★★</div>
         <p class="cita">"Me explicaron cada paso antes de pagar y respondieron todas mis dudas por WhatsApp. Firmé mi contrato de arriendo sin contratiempos."</p>
-        <div class="testi-autor"><div class="avatar-foto"><img src="https://thispersondoesnotexist.com/?t=9" alt="Foto de cliente de fiador.com" loading="lazy" class="foto-testimonio" data-inicial="L"></div><div><div class="nombre">Lucía V.</div><div class="ciudad">Barranquilla</div></div></div>
+        <div class="testi-autor"><div class="avatar-foto"><img src="https://thispersondoesnotexist.com/?t=9" alt="Foto de cliente de fiador.com" width="42" height="42" loading="lazy" class="foto-testimonio" data-inicial="L"></div><div><div class="nombre">Lucía V.</div><div class="ciudad">Barranquilla</div></div></div>
       </div>
       <div class="card-testi">
         <div class="estrellas">★★★★★</div>
         <p class="cita">"Diez años en el mercado se nota: conocían perfectamente los requisitos de mi inmobiliaria en Manizales y todo salió a la primera."</p>
-        <div class="testi-autor"><div class="avatar-foto"><img src="https://thispersondoesnotexist.com/?t=10" alt="Foto de cliente de fiador.com" loading="lazy" class="foto-testimonio" data-inicial="C"></div><div><div class="nombre">Camilo H.</div><div class="ciudad">Manizales</div></div></div>
+        <div class="testi-autor"><div class="avatar-foto"><img src="https://thispersondoesnotexist.com/?t=10" alt="Foto de cliente de fiador.com" width="42" height="42" loading="lazy" class="foto-testimonio" data-inicial="C"></div><div><div class="nombre">Camilo H.</div><div class="ciudad">Manizales</div></div></div>
       </div>
     </div>
     </div>
